@@ -101,3 +101,19 @@ nav {
   text-decoration: underline;
   color: #ffcc00;
 }
+/* Layout Container Styling for All Sections */
+section {
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Center section headings */
+section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4b7bec;
+}
