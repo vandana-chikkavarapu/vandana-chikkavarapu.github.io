@@ -113,7 +113,7 @@ section {
 
 /* Center section headings */
 section h2 {
-  text-align: center;
+  text-align: left;
   margin-bottom: 15px;
   color: #4b7bec;
 }
