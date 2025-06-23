@@ -46,6 +46,7 @@ ul {
 a {
   color: #4b7bec;
   text-decoration: none;
+  transition:0.3s;
 }
 
 a:hover {
@@ -59,6 +60,12 @@ a:hover {
   margin: 15px 0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: #eef3fd;
 }
 
 .project-card h3 {
@@ -88,6 +95,11 @@ nav {
   justify-content: center;
   margin: 0;
   padding: 0;
+}
+.navbar a:hover {
+  color: #ff9f43; /* Orange on hover */
+  text-decoration: underline;
+  transition: 0.3s;
 }
 .navbar li {
   margin: 0 15px;
@@ -126,6 +138,14 @@ footer {
   padding: 15px 0;
   margin-top: 40px;
   font-size: 0.9em;
+}
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: #ff9f43;
+  text-decoration: underline;
 }
 /* Responsive Design */
 @media (max-width: 768px) {
