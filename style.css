@@ -54,8 +54,8 @@ a:hover {
 .profile-pic {
   width: 150px;
   height: 150px;
-  object-fit: cover;
   border-radius: 50%;
+  object-fit:cover;
   display: block;
   margin: 0 auto 20px;
 }
