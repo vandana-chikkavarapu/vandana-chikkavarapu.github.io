@@ -117,3 +117,12 @@ section h2 {
   margin-bottom: 15px;
   color: #4b7bec;
 }
+/* Footer Styling */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
