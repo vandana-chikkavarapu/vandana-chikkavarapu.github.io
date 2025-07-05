@@ -5,157 +5,141 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vandana | Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #fefefe;
-      color: #333;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 220px;
-      height: 100%;
-      background: #f0f0f0;
-      padding-top: 30px;
-      box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-    }
-    nav h1 {
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; background: #fdfdfd; color: #333; }
+    header {
+      height: 100vh;
+      background: linear-gradient(to right, #e6f0ff, #f9f9f9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
       text-align: center;
-      margin-bottom: 30px;
-      font-size: 20px;
-      color: #007acc;
+      padding: 20px;
     }
-    nav ul {
-      list-style: none;
-      padding-left: 0;
-    }
-    nav ul li {
-      margin: 15px 0;
-      text-align: center;
-    }
-    nav ul li a {
+    header h1 { font-size: 3em; color: #007acc; }
+    header p { font-size: 1.2em; margin-top: 10px; }
+    header a {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 10px 25px;
+      background: #007acc;
+      color: #fff;
       text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: 0.3s;
+      border-radius: 8px;
+      transition: background 0.3s;
     }
-    nav ul li a:hover {
+    header a:hover { background: #005f99; }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #ffffff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
       color: #007acc;
+      font-weight: 500;
     }
-    main {
-      margin-left: 220px;
-      padding: 30px;
-    }
+    nav a:hover { color: #005f99; }
     section {
-      margin-bottom: 80px;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
     }
     h2 {
-      font-size: 28px;
       color: #007acc;
       margin-bottom: 20px;
     }
-    .skills {
+    .skills, .projects-grid {
       display: flex;
-      gap: 10px;
+      gap: 15px;
       flex-wrap: wrap;
     }
-    .skill {
-      background: #e0f0ff;
-      padding: 10px 20px;
+    .skill, .project {
+      background: #eaf4ff;
+      padding: 15px 20px;
       border-radius: 8px;
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .project {
-      background: #f2f2f2;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      min-width: 120px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
       padding: 20px;
-      border-top: 1px solid #ccc;
+      font-size: 0.9em;
       color: #777;
+      border-top: 1px solid #ddd;
+      margin-top: 60px;
     }
-    @media (max-width: 768px) {
-      nav {
-        position: static;
-        width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-      }
-      main {
-        margin: 0;
-      }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      nav { flex-wrap: wrap; }
     }
   </style>
 </head>
 <body>
 
-  <nav>
-    <h1>Vandana</h1>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+  <header id="home" data-aos="fade-in">
+    <h1>Chikkavarapu Naga Vandana</h1>
+    <p>Data Science Intern | Java • Python • HTML • CSS</p>
+    <a href="#contact">Contact Me</a>
+  </header>
+
+  <nav data-aos="fade-down">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <main>
-    <section id="home">
-      <h2>Hi, I'm Chikkavarapu Naga Vandana</h2>
-      <p>A passionate Data Science Intern with interest in Java, Python, HTML, and CSS. I love turning data into insights and building smart solutions.</p>
-    </section>
+  <section id="about" data-aos="zoom-in">
+    <h2>About Me</h2>
+    <p>Hello! I'm Vandana, a Data Science Intern with a passion for technology, analytics, and problem-solving. I enjoy exploring data, building tools, and growing through real-world projects.</p>
+  </section>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I'm currently exploring the world of AI and data science. I enjoy learning new things, coding useful tools, and growing as a developer. Currently open for internship and project opportunities.</p>
-    </section>
+  <section id="skills" data-aos="flip-left">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill" data-aos="fade-right">Java</div>
+      <div class="skill" data-aos="fade-up">Python</div>
+      <div class="skill" data-aos="fade-left">HTML</div>
+      <div class="skill" data-aos="fade-down">CSS</div>
+    </div>
+  </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills">
-        <div class="skill">Java</div>
-        <div class="skill">Python</div>
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-      </div>
-    </section>
+  <section id="projects" data-aos="slide-up">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project" data-aos="zoom-in-up">HealthAI Assistant (Coming Soon)</div>
+      <div class="project" data-aos="zoom-in-down">Smart City Portal (Coming Soon)</div>
+      <div class="project" data-aos="flip-up">More Projects Coming...</div>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project">Project 1 - Coming Soon</div>
-        <div class="project">Project 2 - Coming Soon</div>
-        <div class="project">Project 3 - Coming Soon</div>
-      </div>
-    </section>
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:vandanachikkavarapu@gmail.com">vandanachikkavarapu@gmail.com</a></p>
+    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/chikkavarapu-naga-vandana-959335259" target="_blank">Click to View Profile</a></p>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:vandanachikkavarapu@gmail.com">vandanachikkavarapu@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/chikkavarapu-naga-vandana-959335259" target="_blank">View Profile</a></p>
-    </section>
+  <footer data-aos="fade-up">
+    © 2025 Vandana. All rights reserved.
+  </footer>
 
-    <footer>
-      <p>© 2025 Vandana | Designed with ❤</p>
-    </footer>
-  </main>
-
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 </body>
 </html>
